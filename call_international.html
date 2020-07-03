@@ -7,6 +7,24 @@
     <title>TAAI 2020</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <style>
+    input.MyButton {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    background: #3366cc;
+    color: #fff;
+    border: 1px solid #3366cc;
+    border-radius: 10px;
+    }
+    input.MyButton:hover {
+    color: #ffff00;
+    background: #000;
+    border: 1px solid #fff;
+    }
+  </style>
 	<!--<link rel=stylesheet type="text/css" href="css/style.css">-->
   </head>
   <body>
@@ -120,42 +138,114 @@
 	 <div class="jumbotron-fluid" style="margin: auto">
       <img src="images/101-2.jpg" class="img-fluid">	
     </div>
-    <section>
+    
+	<section>
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-              <h1 id="paper" style="font-weight:bold;"></br>Rsearch Paper Submission</h1>  
-              <h4 style="text-align: left;">Paper Submission: <font color="red">August 31, 2020</font></h4>
-              <h4 style="text-align: left;">Notification: <font color="red"> October 12, 2020</font></h4>
-              <h4 style="text-align: left;">Camera-ready: <font color="red">October 19, 2020</font></h4>
-      			<h1 id="thesis" style="font-weight:bold;"></br>Thesis Award</h1>
-              <h4 style="text-align: left;">TBD</h4>
-            <h1 id="reg" style="font-weight:bold;"></br>Registration Dates</h1>
-              <h4 style="text-align: left;">Author Registration: <font color="red">October 19, 2020</font></h4>
-              <h4 style="text-align: left;">Early Registration: <font color="red">October 20, 2020</font></h4>
-            <h1 id="comp" style="font-weight:bold;"></br>Competition Deadlines</h1>
-              <h4 style="text-align: left;">TBD</h4>
-            <h1 id="industry" style="font-weight:bold;"></br>Industry Exhibition</h1>
-              <h4 style="text-align: left;">TBD</h4>
+      <div class="row">
+            <div class="col-12 text-left">
+        <h1 id="date" style="text-align: center; font-weight:bold;"></br>Important Dates</h1>
+          <p>Paper Submission: <font color="red">August 31, 2020</font></p>
+          <p>Notification: <font color="red"> October 12, 2020</font></p>
+          <p>Camera-ready and Registration: <font color="red">December 3-5, 2020</font></p>
+          <p>Conference date: <font color="red">October 19, 2020</font></p>
+        <h1 id="cfp" style="text-align: center; font-weight:bold;"></br>Call for Papers</h1>
+            <p>TAAI 2020 consists of both the international track and domestic track. Papers on academic researches and industrial applications of artificial intelligence and related areas are welcome. TAAI 2020 is open to international participants. We also welcome experienced scholars to organize special sessions to detail specific topics.</p>
+          <h2 style="font-size: 1.5em; font-weight:bold;"></br>Topics of Interest</h2>
+          <p>The conference will cover a wide range of AI research topics and applications, including but not limited to:</p>
+          <table style="text-align: left;width: 100%">
+          <tr>
+          <td style="width: 50%">• Autonomous Agents and Distributed AI</td>
+          <td style="width: 50%">• Computer Games</td>
+          </tr>
+          <tr>
+          <td>• Computer Vision / Pattern Recognition</td>
+          <td>• Data Mining and Knowledge Discovery</td>
+          </tr>
+          <tr>
+          <td>• Federated Learning</td>
+          <td>• Fuzzy Systems and Fuzzy Neural Networks</td>  
+          </tr>
+          <tr>
+          <td>• Genetic and Evolutionary Computation</td>
+          <td>• Knowledge Representation and Automatic Reasoning</td>
+          </tr>
+          <tr>
+          <td>• Knowledge-Based Systems</td>
+          <td>• Machine Learning</td>
+          </tr>
+          <tr>
+          <td>• Natural Language Processing</td>
+          <td>• Problem Solving and Search</td>
+          </tr>
+          <tr>
+          <td>• Recommender Systems</td>
+          <td>• Reinforcement Learning</td>
+          </tr>
+          <tr>
+          <td>• Speech Recognition and Synthesis</td> 
+          <td>• Web Intelligence and Social Networks</td>
+          </tr>
+
+          </table>
+        <h1 id="sub" style="text-align: center; font-weight:bold;"></br>Submission</h1>
+        <p><b>International track: </b>Papers for the international track have to be written and presented in English. Manuscripts should be submitted in PDF format and formatted using the IEEE 2-column format, including the bibliography within 6 pages. Submissions to TAAI 2020 are single-blind, i.e. the names affiliations of the authors should be listed in the submitted version. Selected papers from the international track will be invited to submit an extended version for a special issue in the Journal of Information Science and Engineering after the conference.</p>
+
+        
+          <p><b>Important information: </b>At least one author per accepted paper must register and attend the conference to present for the accepted submission to be included in the conference proceedings.</p>
+        <!--<p><b>Industrial track : </b>The same as that in the domestic track. The paper length is 2 to 4 pages.</p>
+        <p><b>International special session : </b>The same as that in the international track. The paper length is 4 to 6 pages</p>
+        <p><b>Domestic special session : </b>The same as that in the domestic track. The paper length is 2 to 4 pages.</p>-->
+
+         <form>
+          <input class="MyButton" type="button" value="Submit now." onclick="window.location.href='https://cmt3.research.microsoft.com/TAAI2020/'" />
+         </form> 
+
+  
+
+  <!--<h2 style="font-size: 1.5em">Special sessions & Applications</h2>
+    <table id="topic" style="text-align: left;width: 100%">
+  <tr>
+  <td style="width: 50%">• Intelligent Systems to Support Human Society</td>
+  <td style="width: 50%">• Artificial Intelligence for Behavior Analysis</td>
+  
+  </tr>
+  <tr>
+  <td>• Shikakeology</td>
+  <td>• Artificial Intelligence in the Technology and Application of Quantitative Trading</td>
+  </tr>
+  <tr>  
+  <td>• Artificial Intelligence Talent Cultivation</td>
+  <td>• AI and Law</td> 
+  </tr>
+  <tr>
+  <td>• Artificial Intelligence in Traffic</td>
+  <td>• Intelligent e-Learning & Tutoring and Educational Technology</td>
+  
+  </tr>
+  <tr>
+  <td>• AI Demand and Development for Taiwan Industry</td>  
+  <td>• Smart manufacturing</td>  
+  </tr>
+  <tr>
+  <td>• Intelligent Detection and Design</td>
+  <td>• Engineering Applications of AI</td>
+  </tr>
+  <tr>
+  <td>• Robotics and Intelligent Control</td>
+  <td>• Preprocessing Techniques</td>
+  
+  </tr>
+  <tr>
+  <td>• Hybrid AI Technique</td>  
+  </tr>
+  </table>-->
+
           </div>
-        </div>
-      </div>
+    </div>
+  </div>
     </section>
 	
 
-<!--
-	<section id="patrons">
-      <div class="container">
-		  <div class="row">
-          	<div class="col-12 text-center">
-		  <h1></br>Patrons</h1>
-              <p>
-				TBD
-
-      		</div>
-		</div>
-	</div>
-    </section>-->
 
     <footer class="text-center" style="padding-top: 1em;">
       <div class="container">
