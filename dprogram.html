@@ -24,6 +24,7 @@
               <a class="dropdown-item" href="index.html#news">News</a>
               <a class="dropdown-item" href="index.html#covid">Covid-19 Announcement</a>
               <a class="dropdown-item" href="index.html#events">Co-located Events</a>
+              <a class="dropdown-item" href="accepted.html">Accepted Papers</a>
               <a class="dropdown-item" href="sponsor.html">Sponsors</a>
             </div>
           </li>
@@ -55,6 +56,7 @@
       <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="program.html" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Program</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="program.html">Program-at-a-Glance</a> 
               <a class="dropdown-item" href="iprogram.html">International</a> 
         <a class="dropdown-item" href="dprogram.html">Domestic</a>
         <a class="dropdown-item" href="pdprogram.html">Poster & Demo</a>
@@ -360,5 +362,29 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+            //先取得網址字串，假設此頁網址為「index.aspx?id=U001&name=GQSM」
+            var url = location.href;
+
+            //再來用去尋找網址列中是否有資料傳遞(QueryString)
+            if (url.indexOf("?") != -1) {
+                var tab1 = "";
+                //在此直接將各自的參數資料切割放進ary中
+                var ary = url.split("?")[1].split("&");
+                //此時ary的內容為：
+                //ary[0] = 'id=U001'，ary[1] = 'name=GQSM'
+
+                //下迴圈去搜尋每個資料參數
+                for (i = 0; i <= ary.length - 1; i++) {
+                    //如果資料名稱為id的話那就把他取出來
+
+                    if (ary[i].split("=")[0] == "tab1") {
+                        tab1 = ary[i].split("=")[1];
+                    }
+                }
+            }
+            // 第一階顯示;
+            $(`#myTab li:eq(${tab1}) a`).tab("show");
+        </script>
   </body>
 </html>
